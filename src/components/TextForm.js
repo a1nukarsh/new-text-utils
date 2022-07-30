@@ -13,6 +13,11 @@ export default function TextForm(props) {
     let newText = text.toLowerCase()
     setText(newText)
   }
+  const handleClearClick = ()=>{
+    console.log("CLEAR WAS CLICKED")
+    let newText = ""
+    setText(newText)
+  }
   const handleOnChange = (event)=>{
     // console.log("ON CHANGE")
     setText(event.target.value)
@@ -29,6 +34,7 @@ export default function TextForm(props) {
     </div>
     <button className="btn btn-primary my-2 mx-2" onClick={handleUpClick}>Convert to UPPER Case</button>
     <button className="btn btn-primary my-2 mx-2" onClick={handleLowClick}>Convert to lower Case</button>
+    <button className="btn btn-danger my-2 mx-2" onClick={handleClearClick}>Clear</button>
     </div>
     <div className="container my-5">
       <h2>Your text summary</h2>
