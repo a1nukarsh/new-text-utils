@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
+import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // import About from './components/About';
@@ -23,6 +24,7 @@ function App() {
 return (
     <>
       <Navbar title ="TxtEdtrs" mode={mode} toggleMode={toggleMode}/>
+      <Alert alert="hello ji"/>
       <div className="container my-3">
       <TextForm heading="Enter your text here" mode={mode}/>
       {/* <About/> */}
