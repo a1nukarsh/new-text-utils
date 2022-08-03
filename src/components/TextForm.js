@@ -7,27 +7,32 @@ export default function TextForm(props) {
     console.log("UPPER CASE WAS CLICKED")
     let newText = text.toUpperCase()
     setText(newText)
+    props.showAlert("Converted to UPPER Case.", "success")
   }
   const handleLowClick = ()=>{
     console.log("LOWER CASE WAS CLICKED")
     let newText = text.toLowerCase()
     setText(newText)
+    props.showAlert("Converted to lower Case.", "success")
   }
   const handleCopyClick = ()=>{
     console.log("COPY WAS CLICKED")
     let text = document.getElementById("textArea")
     text.select()
     navigator.clipboard.writeText(text.value)
+    props.showAlert("Text has been copied.", "success")
   }
   const handleRemoveExtraSpaceClick = ()=>{
     console.log("RES WAS CLICKED")
     let newText = text.split(/[ ]+/)
     setText(newText.join(" "))
+    props.showAlert("Extra Spaces have been removed.", "success")
   }
   const handleClearClick = ()=>{
     console.log("CLEAR WAS CLICKED")
     let newText = ""
     setText(newText)
+    props.showAlert("Text Area has been cleared.", "danger")
   }
   
 
