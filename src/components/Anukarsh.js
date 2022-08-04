@@ -11,8 +11,9 @@ export default function Anukarsh(props) {
         }} >
         <div className="card-body container">
           <h5 className="card-title">About the Developer</h5>
-          <p className="card-text">
-            This Project was Created by Anukarsh Raj. To learn more, check the following links:
+          <p className="card-text lead">
+            This Project was created by <strong><a href="https://www.linkedin.com/in/a1nukarsh/" className="link-primary">
+            Anukarsh Raj</a> </strong> . To learn more about me, you can go to the following links:
           </p>
           <a href="https://a1nukarsh.github.io/Anukarsh-Raj/" class="btn btn-primary mx-1">
           <i className="bi bi-browser-chrome"></i> Website
