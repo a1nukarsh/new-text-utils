@@ -14,16 +14,16 @@ export default function Anukarsh(props) {
           <p className="card-text">
             This Project was Created by Anukarsh Raj. To learn more, check the following links:
           </p>
-          <a href="#" class="btn btn-primary mx-1">
+          <a href="https://a1nukarsh.github.io/Anukarsh-Raj/" class="btn btn-primary mx-1">
           <i className="bi bi-browser-chrome"></i> Website
           </a>
-          <a href="#" class="btn btn-primary mx-1">
+          <a href="https://github.com/a1nukarsh" class="btn btn-primary mx-1">
           <i className="bi bi-github"></i> Github
           </a>
-          <a href="#" class="btn btn-primary mx-1">
+          <a href="https://www.linkedin.com/in/a1nukarsh/" class="btn btn-primary mx-1">
           <i className="bi bi-linkedin"></i> Linkedin
           </a>
-          <a href="#" class="btn btn-primary mx-1">
+          <a href="https://a1nukarsh.github.io/Resume/" class="btn btn-primary mx-1">
           <i className="bi bi-file-earmark-person"></i> Resume
           </a>
           
