@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Alert from './components/Alert';
+import Anukarsh from './components/Anukarsh';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // import About from './components/About';
@@ -52,6 +53,7 @@ return (
         {/* <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter your text here" mode={mode}/>}/> */}
       {/* </Routes> */}
       <TextForm showAlert={showAlert} heading="Enter your text here" mode={mode}/>
+      <Anukarsh mode={mode}/>
       </div>
     {/* </Router> */}
     </>
