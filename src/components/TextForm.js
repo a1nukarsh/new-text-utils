@@ -56,19 +56,18 @@ export default function TextForm(props) {
         }} 
         id="textArea" rows="8"></textarea>
     </div>
-    <button className="btn btn-primary my-2 mx-2" onClick={handleUpClick}>Convert to UPPER Case</button>
-    <button className="btn btn-primary my-2 mx-2" onClick={handleLowClick}>Convert to lower Case</button>
-    <button className="btn btn-primary my-2 mx-2" onClick={handleRemoveExtraSpaceClick}>Remove Extra Spaces</button>
-    <button className="btn btn-primary my-2 mx-2" onClick={handleCopyClick}>Copy Text</button>
+    <button disabled={text.length===0} className="btn btn-primary my-2 mx-2" onClick={handleUpClick}>Convert to UPPER Case</button>
+    <button disabled={text.length===0} className="btn btn-primary my-2 mx-2" onClick={handleLowClick}>Convert to lower Case</button>
+    <button disabled={text.length===0} className="btn btn-primary my-2 mx-2" onClick={handleRemoveExtraSpaceClick}>Remove Extra Spaces</button>
+    <button disabled={text.length===0} className="btn btn-primary my-2 mx-2" onClick={handleCopyClick}>Copy Text</button>
 
-
-    <button className="btn btn-danger my-2 mx-2" onClick={handleClearClick}>Clear Text</button>
+    <button disabled={text.length===0} className="btn btn-danger my-2 mx-2" onClick={handleClearClick}>Clear Text</button>
     </div>
     <div className="container my-5">
       <h2>Your text summary</h2>
       <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words & {text.length} Characters</p>
       <h3>Preview</h3>
-      <p className='text-wrap'>{text.length>0?text: "Enter text to preview"}</p>
+      <p className='text-wrap'>{text.length>0?text: "Nothing to Preview!"}</p>
     </div>
   </>
   )
