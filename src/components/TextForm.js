@@ -65,7 +65,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-5">
       <h2>Your text summary</h2>
-      <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words & {text.length} Characters</p>
+      <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words & {text.length} Characters</p>
       <h3>Preview</h3>
       <p className='text-wrap'>{text.length>0?text: "Nothing to Preview!"}</p>
     </div>
